@@ -1,7 +1,7 @@
 'use strict';
 
-miVariable = 17;
-console.log(miVariable);
+miEdad = 45;
+console.log(`Mi edad es de $${miEdad} años`);
 
 // Si ejecuto este archivo en modo estricto, la ejecucion provocara un error dado que la variable "miVariable"
 // no fue definida.
