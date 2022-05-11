@@ -10,7 +10,7 @@ const paymentTypes = {
     EFECTIVO: 'Sobre cobrar con efectivo',
   };
   
-  const from='EFECTIVO';
+  const from='DEBITO';
   
   const summaryTitle = {
         [paymentTypes.CREDITO]: titlePaymentTypes.CREDITO,
@@ -19,4 +19,5 @@ const paymentTypes = {
       };
   
   console.log(summaryTitle[from]);
+  console.log(summaryTitle.DEBITO);
   

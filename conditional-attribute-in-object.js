@@ -8,3 +8,23 @@ const obj = {
 };
 
 console.log(obj);
+
+//Otro ejemplo:
+const cuit = '23-12903459-8';
+const bodie = {
+  type:'tipo1',
+  registered : 'true'
+}
+
+const {type = 'tipo0', registered} = bodie;
+
+console.log('Registered', registered);
+
+const query = {
+	cuit,
+  type,
+  ...(registered && {isRegistered:registered})
+};
+
+console.log(query)
+
