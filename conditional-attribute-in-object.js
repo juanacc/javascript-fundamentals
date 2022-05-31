@@ -13,7 +13,7 @@ console.log(obj);
 const cuit = '23-12903459-8';
 const bodie = {
   type:'tipo1',
-  registered : 'true'
+  registered : true
 }
 
 const {type = 'tipo0', registered} = bodie;
