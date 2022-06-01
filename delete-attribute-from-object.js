@@ -9,5 +9,12 @@ let merlin = {
 
 let {hobbies, height, eyes, ...modifiedMerlin} = merlin;
 
+//tambien se puede hacer esto para eliminar atributos de un objeto
+const modifiedMerlin2 = merlin;
+delete modifiedMerlin2.hobbies;
+delete modifiedMerlin2.height;
+delete modifiedMerlin2.eyes;
+
 console.log('Original merlin', merlin);
 console.log('Modified merlin', modifiedMerlin);
+console.log('Modified merlin2', modifiedMerlin2);
